@@ -34,7 +34,7 @@ function update() {
 }
 
 function getImage() {
-    if (uploadedImageUrl) {
+    if (image_select.value == 'custom' && uploadedImageUrl) {
         image = document.getElementById('blah');
     } else {
         image = document.getElementById(`${image_select.value}`);
